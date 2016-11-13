@@ -3,13 +3,13 @@
     <div :class="$style.text">
       some text
     </div>
-    <div :class="$style.text1">
-      some text1
-    </div>
+    <main-text></main-text>
   </div>
 </template>
 
 <script>
+import text from "./components/text.vue";
+
 export default {
   created () {
     console.log(this.$style)
@@ -19,6 +19,9 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components:{
+    'main-text':text
   }
 }
 </script>
@@ -34,18 +37,10 @@ export default {
   margin-top: 60px;
 }
 
-.red {
-  color: red;
-}
 .text{
-
-  composes: large from "sass!./common/color.scss";
+  font-size: 20px;
   composes: red from "sass!./common/color.scss";
 }
 
-.text1{
-  font-size:18px;
-  composes: red from "sass!./common/color.scss";
-}
 
 </style>

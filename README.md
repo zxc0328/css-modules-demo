@@ -1,18 +1,12 @@
-# {{ name }}
+A demo of using CSS Modules along with vue-loader and webpack
 
-> {{ description }}
 
-## Build Setup
+### Run
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+```
+cnpm install
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```
+npm run dev
+```

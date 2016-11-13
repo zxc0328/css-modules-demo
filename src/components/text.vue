@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.text">
+  <div :class="$style.text" v-foo="this.bar">
     text from anonther component
   </div>
 </template>
@@ -10,6 +10,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+    bar() {
+      console.log("ddd")
     }
   }
 }
